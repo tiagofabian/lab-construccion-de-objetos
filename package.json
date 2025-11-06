@@ -1,0 +1,16 @@
+{
+  "name": "sd-06-1_modified",
+  "version": "1.0.0",
+  "description": "Constructors are used to define a template for a new object type. The `new` operator will create a new instance of that object.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
