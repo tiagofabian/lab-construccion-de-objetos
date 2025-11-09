@@ -1,5 +1,3 @@
-import prompt from "prompt-sync"
-
 function Mail(subj, msg) {
     this.subject = subj
     this.message = msg
@@ -7,8 +5,8 @@ function Mail(subj, msg) {
   
   // Type your code below this line!
 
-  const subjUser = process.argv[2]
-  const messageUser = process.argv[3]
+  const subjUser = process.argv[3]
+  const messageUser = process.argv[4]
   
   const newMail = new Mail(subjUser, messageUser)
   

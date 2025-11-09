@@ -4,8 +4,8 @@ function Journey(start, end) {
   this.end = end;
 }
 
-const from = process.argv[2]
-const to = process.argv[3]
+const from = process.argv[3]
+const to = process.argv[4]
 
 // Type your code above this line!
 
