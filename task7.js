@@ -1,20 +1,36 @@
+// ESTE CODIGO CONTIENE EMOJIS VISIBLES CON CHALK
 // Type your code below this line!
-function Car(brand, model, year, engineType, color, mileage) {
-  this.brand = brand
-  this.model = model
-  this.year = year
-  this.engineType = engineType
-  this.color = color
-  this.mileage = mileage
+const prompt = require("prompt-sync")();
  
-  this.showCarDescription = function() {
-    console.log("### Caracteristicas ###")
-    console.log(`marca: ${brand}\nmodelo: ${model}\naño: ${year}\ntipo de motor: ${engineType}\ncolor: ${color}\nkilometraje: ${mileage}`)
-  };
-}
+function car(marca, modelo, año, motor, color, kilometraje) { 
+ 
+    this.marca = marca;
+    this.modelo = modelo;
+    this.año = año;
+    this.motor = motor;
+    this.color = color;
+    this.kilometraje = kilometraje;
+    
+    this.mostrarInfo = function(){
+        console.log(` 🚗 ${this.marca} ${this.modelo} ${this.año}`);
+        console.log(`Color: ${this.color}`);
+        console.log(`Motor: ${this.motor}`);
+        console.log(`Kilometraje: ${this.kilometraje} km`);
+    }
+};
 
-const newCar = new Car("Toyota", "Camry", 2022, "Hybrid", "Silver", 18500);
+// Type your code below this line!
 
-newCar.showCarDescription();
+
+const marca = prompt("Ingrese marca: ");
+const modelo = prompt("Ingrese modelo: ");
+const año = parseInt(prompt("Ingrese año: "));
+const motor = prompt("Ingrese tipo de motor (combustión o electrico): ");
+const color = prompt ("Ingrese color: ");
+const kilometraje = parseInt(prompt("ingrese kilometraje: "));
+
+const miAuto = new car(marca, modelo, año, motor, color, kilometraje)
+console.log("=== Información del Auto ===")
+miAuto.mostrarInfo()
 // Type your code above this line!
 
